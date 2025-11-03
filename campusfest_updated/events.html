@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusFest 2025 - Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">CampusFest</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="events.html" class="nav-link active">Events</a></li>
+                <li><a href="register.html" class="nav-link">Register</a></li>
+                <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="events" class="section active">
+        <div class="container">
+            <h2 class="section-title">Events & Competitions</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <span class="event-category">Technical</span>
+                    <h3 class="event-title">Code Sprint Challenge</h3>
+                    <p class="event-description">48-hour coding marathon with cutting-edge problem statements and exciting prizes for the most innovative solutions.</p>
+                    <div class="event-details">
+                        <div class="event-time">🕐 Oct 15, 9:00 AM</div>
+                        <div class="event-venue">📍 Tech Auditorium</div>
+                    </div>
+                    <button class="register-btn" onclick="registerForEvent('Code Sprint Challenge')">Register Now</button>
+                </div>
+                <div class="event-card">
+                    <span class="event-category">Cultural</span>
+                    <h3 class="event-title">Battle of Bands</h3>
+                    <p class="event-description">Showcase your musical talents in the biggest musical showdown. Solo artists and bands welcome to compete for the crown.</p>
+                    <div class="event-details">
+                        <div class="event-time">🕐 Oct 16, 7:00 PM</div>
+                        <div class="event-venue">📍 Main Stage</div>
+                    </div>
+                    <button class="register-btn" onclick="registerForEvent('Battle of Bands')">Register Now</button>
+                </div>
+                <div class="event-card">
+                    <span class="event-category">Sports</span>
+                    <h3 class="event-title">E-Sports Tournament</h3>
+                    <p class="event-description">Multiple gaming competitions including PUBG, FIFA, and CS:GO with professional gaming setups and live streaming.</p>
+                    <div class="event-details">
+                        <div class="event-time">🕐 Oct 17, 2:00 PM</div>
+                        <div class="event-venue">📍 Gaming Arena</div>
+                    </div>
+                    <button class="register-btn" onclick="registerForEvent('E-Sports Tournament')">Register Now</button>
+                </div>
+                <div class="event-card">
+                    <span class="event-category">Workshop</span>
+                    <h3 class="event-title">AI & Machine Learning</h3>
+                    <p class="event-description">Hands-on workshop covering latest trends in AI/ML with industry experts and practical project implementations.</p>
+                    <div class="event-details">
+                        <div class="event-time">🕐 Oct 18, 10:00 AM</div>
+                        <div class="event-venue">📍 Innovation Lab</div>
+                    </div>
+                    <button class="register-btn" onclick="registerForEvent('AI & Machine Learning')">Register Now</button>
+                </div>
+                <div class="event-card">
+                    <span class="event-category">Cultural</span>
+                    <h3 class="event-title">Dance Championship</h3>
+                    <p class="event-description">Express yourself through dance in various categories: Hip-hop, Contemporary, Classical, and Fusion dance forms.</p>
+                    <div class="event-details">
+                        <div class="event-time">🕐 Oct 19, 5:00 PM</div>
+                        <div class="event-venue">📍 Cultural Center</div>
+                    </div>
+                    <button class="register-btn" onclick="registerForEvent('Dance Championship')">Register Now</button>
+                </div>
+                <div class="event-card">
+                    <span class="event-category">Business</span>
+                    <h3 class="event-title">Startup Pitch Competition</h3>
+                    <p class="event-description">Present your innovative business ideas to industry leaders and investors. Win funding and mentorship opportunities.</p>
+                    <div class="event-details">
+                        <div class="event-time">🕐 Oct 20, 11:00 AM</div>
+                        <div class="event-venue">📍 Business Hub</div>
+                    </div>
+                    <button class="register-btn" onclick="registerForEvent('Startup Pitch Competition')">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

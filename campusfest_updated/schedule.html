@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusFest 2025 - Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">CampusFest</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="register.html" class="nav-link">Register</a></li>
+                <li><a href="schedule.html" class="nav-link active">Schedule</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="schedule" class="section active">
+        <div class="container">
+            <h2 class="section-title">Event Schedule</h2>
+            <div class="schedule-container">
+                <div class="day-tabs">
+                    <button class="day-tab active" onclick="showDay('day1', this)">Day 1 - Oct 15</button>
+                    <button class="day-tab" onclick="showDay('day2', this)">Day 2 - Oct 16</button>
+                    <button class="day-tab" onclick="showDay('day3', this)">Day 3 - Oct 17</button>
+                </div>
+                <div id="day1" class="day-schedule">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">9:00 AM</div>
+                            <div class="timeline-event">Registration & Welcome</div>
+                            <div class="timeline-venue">Main Entrance</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">10:00 AM</div>
+                            <div class="timeline-event">Opening Ceremony</div>
+                            <div class="timeline-venue">Main Auditorium</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">11:30 AM</div>
+                            <div class="timeline-event">Code Sprint Challenge Begins</div>
+                            <div class="timeline-venue">Tech Auditorium</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">2:00 PM</div>
+                            <div class="timeline-event">AI & ML Workshop</div>
+                            <div class="timeline-venue">Innovation Lab</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">6:00 PM</div>
+                            <div class="timeline-event">Cultural Evening & Networking</div>
+                            <div class="timeline-venue">Central Courtyard</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="day2" class="day-schedule" style="display: none;">
+                    <div class="timeline">
+                         <div class="timeline-item">
+                            <div class="timeline-time">10:00 AM</div>
+                            <div class="timeline-event">Dance Championship Auditions</div>
+                            <div class="timeline-venue">Cultural Center</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">12:00 PM</div>
+                            <div class="timeline-event">Startup Pitch Presentations</div>
+                            <div class="timeline-venue">Business Hub</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">3:00 PM</div>
+                            <div class="timeline-event">Code Sprint Challenge Finals</div>
+                            <div class="timeline-venue">Tech Auditorium</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">7:00 PM</div>
+                            <div class="timeline-event">Battle of Bands - Main Event</div>
+                            <div class="timeline-venue">Main Stage</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">10:00 PM</div>
+                            <div class="timeline-event">DJ Night & After Party</div>
+                            <div class="timeline-venue">Open Arena</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="day3" class="day-schedule" style="display: none;">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">11:00 AM</div>
+                            <div class="timeline-event">E-Sports Tournament</div>
+                            <div class="timeline-venue">Gaming Arena</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">2:00 PM</div>
+                            <div class="timeline-event">Dance Championship Finals</div>
+                            <div class="timeline-venue">Cultural Center</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">4:00 PM</div>
+                            <div class="timeline-event">Award Ceremony</div>
+                            <div class="timeline-venue">Main Auditorium</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">6:00 PM</div>
+                            <div class="timeline-event">Closing Ceremony</div>
+                            <div class="timeline-venue">Main Auditorium</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">8:00 PM</div>
+                            <div class="timeline-event">Grand Finale Show</div>
+                            <div class="timeline-venue">Main Stage</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

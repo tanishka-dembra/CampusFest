@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusFest 2025 - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">CampusFest</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="register.html" class="nav-link active">Register</a></li>
+                <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="registration" class="section active">
+        <div class="container">
+            <h2 class="section-title">Event Registration</h2>
+            <form class="registration-form" id="registrationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="collegeId">College ID *</label>
+                        <input type="text" id="collegeId" name="collegeId" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="college">College/University *</label>
+                    <input type="text" id="college" name="college" required>
+                </div>
+                <div class="form-group">
+                    <label for="event">Select Event *</label>
+                    <select id="event" name="event" required>
+                        <option value="">Choose an event...</option>
+                        <option value="Code Sprint Challenge">Code Sprint Challenge</option>
+                        <option value="Battle of Bands">Battle of Bands</option>
+                        <option value="E-Sports Tournament">E-Sports Tournament</option>
+                        <option value="AI & Machine Learning">AI & Machine Learning Workshop</option>
+                        <option value="Dance Championship">Dance Championship</option>
+                        <option value="Startup Pitch Competition">Startup Pitch Competition</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="teamType">Registration Type *</label>
+                    <select id="teamType" name="teamType" required>
+                        <option value="">Select type...</option>
+                        <option value="individual">Individual</option>
+                        <option value="team">Team</option>
+                    </select>
+                </div>
+                <div class="form-group" id="teamNameGroup" style="display: none;">
+                    <label for="teamName">Team Name</label>
+                    <input type="text" id="teamName" name="teamName">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience Level *</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select level...</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="additionalInfo">Additional Information (Optional)</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Any special requirements, dietary restrictions, or additional details..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Register for CampusFest 2025</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="success-message" id="successMessage">
+        <h2 style="color: #667eea; margin-bottom: 1rem;">🎉 Registration Successful!</h2>
+        <p style="margin-bottom: 2rem;">Thank you for registering for <span id="registeredEvent"></span>. You'll receive a confirmation email shortly with all the details.</p>
+        <button onclick="closeSuccessMessage()" style="padding: 1rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold;">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
